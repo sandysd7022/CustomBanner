@@ -1,0 +1,18 @@
+{
+    "name": "SD/custom-banner",
+    "description": "Add banner on any in page",
+    "require": {
+        "magento/custom-banner": "100.*.*",
+        "magento/Magento_Backend": "100.*.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SD\\CustomBanner\\": ""
+        }
+    }
+}

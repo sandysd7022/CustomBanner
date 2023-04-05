@@ -1,0 +1,59 @@
+<?php
+/**
+ * @category  Custom Banner
+ * @package   SD_CustomBanner
+ * @author    Developer SD
+ */
+
+$helper = $this->helper('SD\CustomBanner\Helper\Data');
+$isEnable = $helper->getCfg('general/enable');
+if ($isEnable == 1){
+ $baseUrl = $this->getBaseUrl(); 
+?>
+
+<div class="cta">
+<div class="cta-home-block">
+<div class="cta-img">
+    <a 
+    title="<?php echo $helper->getCfg('first_banner_section/banner_alt_1'); ?>" 
+    href="<?php echo $helper->getCfg('first_banner_section/banner_url_1'); ?>"> 
+    <img 
+    title="<?php echo $helper->getCfg('first_banner_section/banner_title_1'); ?>" 
+    src="<?php echo $baseUrl.'/pub/media/wysiwyg/'.$helper->getCfg('first_banner_section/banner_image_1'); ?>" 
+    alt="<?php echo $helper->getCfg('first_banner_section/banner_alt_1'); ?>" 
+    width="465" 
+    height="550" 
+    data-promotion="<?php echo $helper->getCfg('first_banner_section/data_promotion_active_1'); ?>" 
+    data-promotion-id="<?php echo $helper->getCfg('first_banner_section/data_promotion_id_1'); ?>" 
+    data-promotion-name="<?php echo $helper->getCfg('first_banner_section/data_promotion_name_1'); ?>" 
+    data-promotion-creative="<?php echo $helper->getCfg('first_banner_section/data_promotion_creative_1'); ?>" 
+    data-promotion-position="<?php echo $helper->getCfg('first_banner_section/data_promotion_position_1'); ?>" /> 
+    </a>
+</div>
+</div>
+<div class="cta-home-block">
+<div class="cta-img">
+    <a 
+    title="<?php echo $helper->getCfg('second_banner_section/banner_alt_2'); ?>" 
+    href="<?php echo $helper->getCfg('second_banner_section/banner_url_2'); ?>"> 
+    <img 
+    title="<?php echo $helper->getCfg('second_banner_section/banner_title_2'); ?>" 
+    src="<?php echo $baseUrl.'/pub/media/wysiwyg/'.$helper->getCfg('second_banner_section/banner_image_2'); ?>" 
+    alt="<?php echo $helper->getCfg('second_banner_section/banner_alt_2'); ?>" 
+    width="465" 
+    height="550" 
+    data-promotion="<?php echo $helper->getCfg('second_banner_section/data_promotion_active_2'); ?>" 
+    data-promotion-id="<?php echo $helper->getCfg('second_banner_section/data_promotion_id_2'); ?>" 
+    data-promotion-name="<?php echo $helper->getCfg('second_banner_section/data_promotion_name_2'); ?>" 
+    data-promotion-creative="<?php echo $helper->getCfg('second_banner_section/data_promotion_creative_2'); ?>" 
+    data-promotion-position="<?php echo $helper->getCfg('second_banner_section/data_promotion_position_2'); ?>" /> 
+    </a>
+</div>
+</div>
+</div>
+<div class="cta-home-block">&nbsp;</div>
+<div class="cta-home-block">
+<div class="cta-img">&nbsp;</div>
+</div>
+
+<?php } ?>
