@@ -41,7 +41,7 @@ class Saveimage extends \Magento\Config\Model\Config\Backend\Image
     {
         return true;
     }
-
+    
     /**
      * Save uploaded file before saving config value
      *
@@ -61,3 +61,4 @@ class Saveimage extends \Magento\Config\Model\Config\Backend\Image
         return parent::beforeSave();
     }
 }
+
